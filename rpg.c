@@ -84,171 +84,192 @@ int main() {
     while(momento <= 20 && final == 0) {
         printf("\n--- Momento %d ---\n", momento);
 
-        switch(momento) {
-            case 1:
-                printf("Você chega à cidade de Arkham ao entardecer. As ruas estão silenciosas e uma névoa espessa cobre tudo.\n");
-                printf("1) Investigar a taverna local.\n");
-                printf("2) Perguntar aos moradores sobre desaparecimentos.\n");
-                printf("3) Explorar a floresta próxima.\n");
-                printf("4) Visitar a biblioteca antiga.\n");
-                printf("5) Ignorar a cidade e seguir viagem.\n");
-                break;
-            case 2:
-                printf("Você encontra um estranho objeto brilhante no chão.\n");
-                printf("1) Pegar o objeto.\n");
-                printf("2) Ignorar e continuar.\n");
-                printf("3) Mostrar para um morador.\n");
-                printf("4) Jogar o objeto no chão.\n");
-                printf("5) Guardar para estudar depois.\n");
-                break;
-            case 3:
-                printf("Uma criatura grotesca aparece na floresta.\n");
-                printf("1) Atacar com seu bastão.\n");
-                printf("2) Fugir para a floresta densa.\n");
-                printf("3) Tentar conversar.\n");
-                printf("4) Usar um amuleto de proteção.\n");
-                printf("5) Se esconder.\n");
-                break;
-            case 4:
-                printf("Você encontra um livro antigo com símbolos estranhos.\n");
-                printf("1) Ler o livro.\n");
-                printf("2) Queimar o livro.\n");
-                printf("3) Guardar o livro.\n");
-                printf("4) Mostrar para um especialista.\n");
-                printf("5) Ignorar o livro.\n");
-                break;
-            case 5:
-                printf("Sua sanidade está abalada.\n");
-                printf("1) Meditar para recuperar.\n");
-                printf("2) Beber para esquecer.\n");
-                printf("3) Procurar ajuda médica.\n");
-                printf("4) Continuar investigando.\n");
-                printf("5) Dormir.\n");
-                break;
-            case 6:
-                printf("Você encontra uma passagem secreta.\n");
-                printf("1) Entrar na passagem.\n");
-                printf("2) Marcar o local e voltar depois.\n");
-                printf("3) Ignorar e seguir outro caminho.\n");
-                printf("4) Colocar armadilhas.\n");
-                printf("5) Gritar para ver se alguém responde.\n");
-                break;
-            case 7:
-                printf("Um morador oferece ajuda suspeita.\n");
-                printf("1) Aceitar ajuda.\n");
-                printf("2) Recusar educadamente.\n");
-                printf("3) Perguntar intenções.\n");
-                printf("4) Ignorar e seguir sozinho.\n");
-                printf("5) Observar de longe.\n");
-                break;
-            case 8:
-                printf("Você encontra um altar estranho.\n");
-                printf("1) Tocar no altar.\n");
-                printf("2) Orar para seu deus.\n");
-                printf("3) Fotografar o altar.\n");
-                printf("4) Ignorar o altar.\n");
-                printf("5) Destruir o altar.\n");
-                break;
-            case 9:
-                printf("Você sente uma presença maligna.\n");
-                printf("1) Enfrentar a presença.\n");
-                printf("2) Fugir.\n");
-                printf("3) Usar um talismã.\n");
-                printf("4) Gritar por ajuda.\n");
-                printf("5) Se esconder.\n");
-                break;
-            case 10:
-                printf("Você encontra um mapa antigo.\n");
-                printf("1) Seguir o mapa.\n");
-                printf("2) Guardar para depois.\n");
-                printf("3) Queimar o mapa.\n");
-                printf("4) Mostrar para um aliado.\n");
-                printf("5) Ignorar o mapa.\n");
-                break;
-            case 11:
-                printf("Você é atacado por cultistas.\n");
-                printf("1) Lutar.\n");
-                printf("2) Fugir.\n");
-                printf("3) Tentar negociar.\n");
-                printf("4) Usar magia.\n");
-                printf("5) Se esconder.\n");
-                break;
-            case 12:
-                printf("Você encontra um artefato poderoso.\n");
-                printf("1) Usar o artefato.\n");
-                printf("2) Guardar com cuidado.\n");
-                printf("3) Destruir o artefato.\n");
-                printf("4) Vender para um colecionador.\n");
-                printf("5) Ignorar o artefato.\n");
-                break;
-            case 13:
-                printf("Sua sanidade está crítica.\n");
-                printf("1) Buscar ajuda espiritual.\n");
-                printf("2) Tomar remédios.\n");
-                printf("3) Continuar investigando.\n");
-                printf("4) Descansar.\n");
-                printf("5) Desistir da missão.\n");
-                break;
-            case 14:
-                printf("Você encontra um portal estranho.\n");
-                printf("1) Entrar no portal.\n");
-                printf("2) Estudar o portal.\n");
-                printf("3) Fechar o portal.\n");
-                printf("4) Ignorar o portal.\n");
-                printf("5) Avisar os moradores.\n");
-                break;
-            case 15:
-                printf("Você é capturado por forças desconhecidas.\n");
-                printf("1) Tentar escapar.\n");
-                printf("2) Negociar.\n");
-                printf("3) Esperar uma oportunidade.\n");
-                printf("4) Atacar os captores.\n");
-                printf("5) Se render.\n");
-                break;
-            case 16:
-                printf("Você encontra um diário com segredos.\n");
-                printf("1) Ler o diário.\n");
-                printf("2) Queimar o diário.\n");
-                printf("3) Guardar o diário.\n");
-                printf("4) Mostrar para um aliado.\n");
-                printf("5) Ignorar o diário.\n");
-                break;
-            case 17:
-                printf("Você sente que está sendo seguido.\n");
-                printf("1) Confrontar quem segue.\n");
-                printf("2) Fugir.\n");
-                printf("3) Se esconder.\n");
-                printf("4) Usar truques para despistar.\n");
-                printf("5) Ignorar e continuar.\n");
-                break;
-            case 18:
-                printf("Você encontra um ritual em andamento.\n");
-                printf("1) Interromper o ritual.\n");
-                printf("2) Observar de longe.\n");
-                printf("3) Fugir.\n");
-                printf("4) Participar do ritual.\n");
-                printf("5) Chamar reforços.\n");
-                break;
-            case 19:
-                printf("Você está perto do objetivo final.\n");
-                printf("1) Avançar com cautela.\n");
-                printf("2) Atacar de surpresa.\n");
-                printf("3) Negociar com o inimigo.\n");
-                printf("4) Recuar para planejar.\n");
-                printf("5) Usar artefatos coletados.\n");
-                break;
-            case 20:
-                printf("Momento decisivo!\n");
-                printf("1) Enfrentar o horror final.\n");
-                printf("2) Fugir para salvar a vida.\n");
-                printf("3) Usar todo o conhecimento adquirido.\n");
-                printf("4) Sacrificar-se para salvar outros.\n");
-                printf("5) Tentar selar o mal para sempre.\n");
-                break;
-            default:
-                printf("Momento não implementado.\n");
-                break;
-        }
+switch(momento) {
+    case 1:
+        printf("Você chega à cidade de Arkham ao entardecer. As ruas estão silenciosas e uma névoa espessa cobre tudo.\n");
+        printf("A atmosfera é pesada, e você sente que algo sombrio está prestes a se revelar.\n");
+        printf("1) Investigar a taverna local.\n");
+        printf("2) Perguntar aos moradores sobre desaparecimentos.\n");
+        printf("3) Explorar a floresta próxima.\n");
+        printf("4) Visitar a biblioteca antiga.\n");
+        printf("5) Ignorar a cidade e seguir viagem.\n");
+        break;
+    case 2:
+        printf("Você encontra um estranho objeto brilhante no chão.\n");
+        printf("Ele parece pulsar com uma energia desconhecida, despertando sua curiosidade.\n");
+        printf("1) Pegar o objeto.\n");
+        printf("2) Ignorar e continuar.\n");
+        printf("3) Mostrar para um morador.\n");
+        printf("4) Jogar o objeto no chão.\n");
+        printf("5) Guardar para estudar depois.\n");
+        break;
+    case 3:
+        printf("Uma criatura grotesca aparece na floresta.\n");
+        printf("Seus olhos brilham na penumbra, e um arrepio percorre sua espinha.\n");
+        printf("1) Atacar com seu bastão.\n");
+        printf("2) Fugir para a floresta densa.\n");
+        printf("3) Tentar conversar.\n");
+        printf("4) Usar um amuleto de proteção.\n");
+        printf("5) Se esconder.\n");
+        break;
+    case 4:
+        printf("Você encontra um livro antigo com símbolos estranhos.\n");
+        printf("As páginas parecem conter segredos esquecidos pelo tempo.\n");
+        printf("1) Ler o livro.\n");
+        printf("2) Queimar o livro.\n");
+        printf("3) Guardar o livro.\n");
+        printf("4) Mostrar para um especialista.\n");
+        printf("5) Ignorar o livro.\n");
+        break;
+    case 5:
+        printf("Sua sanidade está abalada.\n");
+        printf("Você sente a mente pesada, como se sombras tentassem dominá-la.\n");
+        printf("1) Meditar para recuperar.\n");
+        printf("2) Beber para esquecer.\n");
+        printf("3) Procurar ajuda médica.\n");
+        printf("4) Continuar investigando.\n");
+        printf("5) Dormir.\n");
+        break;
+    case 6:
+        printf("Você encontra uma passagem secreta.\n");
+        printf("O ar é frio e úmido, e um silêncio inquietante envolve o local.\n");
+        printf("1) Entrar na passagem.\n");
+        printf("2) Marcar o local e voltar depois.\n");
+        printf("3) Ignorar e seguir outro caminho.\n");
+        printf("4) Colocar armadilhas.\n");
+        printf("5) Gritar para ver se alguém responde.\n");
+        break;
+    case 7:
+        printf("Um morador oferece ajuda suspeita.\n");
+        printf("Seus olhos escondem segredos, e você não sabe se pode confiar.\n");
+        printf("1) Aceitar ajuda.\n");
+        printf("2) Recusar educadamente.\n");
+        printf("3) Perguntar intenções.\n");
+        printf("4) Ignorar e seguir sozinho.\n");
+        printf("5) Observar de longe.\n");
+        break;
+    case 8:
+        printf("Você encontra um altar estranho.\n");
+        printf("Ele emana uma energia antiga, que parece tanto benéfica quanto perigosa.\n");
+        printf("1) Tocar no altar.\n");
+        printf("2) Orar para seu deus.\n");
+        printf("3) Fotografar o altar.\n");
+        printf("4) Ignorar o altar.\n");
+        printf("5) Destruir o altar.\n");
+        break;
+    case 9:
+        printf("Você sente uma presença maligna.\n");
+        printf("O ar ao seu redor parece congelar, e um medo profundo te invade.\n");
+        printf("1) Enfrentar a presença.\n");
+        printf("2) Fugir.\n");
+        printf("3) Usar um talismã.\n");
+        printf("4) Gritar por ajuda.\n");
+        printf("5) Se esconder.\n");
+        break;
+    case 10:
+        printf("Você encontra um mapa antigo.\n");
+        printf("Ele pode ser a chave para encontrar o que procura, mas também pode ser uma armadilha.\n");
+        printf("1) Seguir o mapa.\n");
+        printf("2) Guardar para depois.\n");
+        printf("3) Queimar o mapa.\n");
+        printf("4) Mostrar para um aliado.\n");
+        printf("5) Ignorar o mapa.\n");
+        break;
+    case 11:
+        printf("Você é atacado por cultistas.\n");
+        printf("Eles parecem determinados a impedir sua missão a qualquer custo.\n");
+        printf("1) Lutar.\n");
+        printf("2) Fugir.\n");
+        printf("3) Tentar negociar.\n");
+        printf("4) Usar magia.\n");
+        printf("5) Se esconder.\n");
+        break;
+    case 12:
+        printf("Você encontra um artefato poderoso.\n");
+        printf("Seu brilho é hipnotizante, mas você sente que pode ser perigoso.\n");
+        printf("1) Usar o artefato.\n");
+        printf("2) Guardar com cuidado.\n");
+        printf("3) Destruir o artefato.\n");
+        printf("4) Vender para um colecionador.\n");
+        printf("5) Ignorar o artefato.\n");
+        break;
+    case 13:
+        printf("Sua sanidade está crítica.\n");
+        printf("A linha entre realidade e pesadelo começa a se confundir.\n");
+        printf("1) Buscar ajuda espiritual.\n");
+        printf("2) Tomar remédios.\n");
+        printf("3) Continuar investigando.\n");
+        printf("4) Descansar.\n");
+        printf("5) Desistir da missão.\n");
+        break;
+    case 14:
+        printf("Você encontra um portal estranho.\n");
+        printf("Ele pulsa com uma energia que desafia a compreensão humana.\n");
+        printf("1) Entrar no portal.\n");
+        printf("2) Estudar o portal.\n");
+        printf("3) Fechar o portal.\n");
+        printf("4) Ignorar o portal.\n");
+        printf("5) Avisar os moradores.\n");
+        break;
+    case 15:
+        printf("Você é capturado por forças desconhecidas.\n");
+        printf("O destino parece incerto, e a esperança é sua única arma.\n");
+        printf("1) Tentar escapar.\n");
+        printf("2) Negociar.\n");
+        printf("3) Esperar uma oportunidade.\n");
+        printf("4) Atacar os captores.\n");
+        printf("5) Se render.\n");
+        break;
+    case 16:
+        printf("Você encontra um diário com segredos.\n");
+        printf("As palavras escritas podem mudar tudo que você sabe.\n");
+        printf("1) Ler o diário.\n");
+        printf("2) Queimar o diário.\n");
+        printf("3) Guardar o diário.\n");
+        printf("4) Mostrar para um aliado.\n");
+        printf("5) Ignorar o diário.\n");
+        break;
+    case 17:
+        printf("Você sente que está sendo seguido.\n");
+        printf("Cada passo seu é acompanhado por uma sombra invisível.\n");
+        printf("1) Confrontar quem segue.\n");
+        printf("2) Fugir.\n");
+        printf("3) Se esconder.\n");
+        printf("4) Usar truques para despistar.\n");
+        printf("5) Ignorar e continuar.\n");
+        break;
+    case 18:
+        printf("Você encontra um ritual em andamento.\n");
+        printf("O ar está carregado de energia sombria e ameaçadora.\n");
+        printf("1) Interromper o ritual.\n");
+        printf("2) Observar de longe.\n");
+        printf("3) Fugir.\n");
+        printf("4) Participar do ritual.\n");
+        printf("5) Chamar reforços.\n");
+        break;
+    case 19:
+        printf("Você está perto do objetivo final.\n");
+        printf("O destino de Arkham e sua própria vida dependem do que você fará agora.\n");
+        printf("1) Avançar com cautela.\n");
+        printf("2) Atacar de surpresa.\n");
+        printf("3) Negociar com o inimigo.\n");
+        printf("4) Recuar para planejar.\n");
+        printf("5) Usar artefatos coletados.\n");
+        break;
+    case 20:
+        printf("Momento decisivo!\n");
+        printf("O confronto final está diante de você, e tudo que fez até aqui culmina neste instante.\n");
+        printf("1) Enfrentar o horror final.\n");
+        printf("2) Fugir para salvar a vida.\n");
+        printf("3) Usar todo o conhecimento adquirido.\n");
+        printf("4) Sacrificar-se para salvar outros.\n");
+        printf("5) Tentar selar o mal para sempre.\n");
+        break;
+    default:
+        printf("Momento não implementado.\n");
+        break;
+}
+
 
         printf("Escolha uma opção (1-5): ");
         scanf("%d", &escolha);
